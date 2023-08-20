@@ -6,7 +6,7 @@ from . import models
 class SerializedAuto(serializers.ModelSerializer):
     class Meta:
         model = models.Auto
-        fields = ['label', 'year', 'price', 'description']
+        fields = ['id', 'label', 'year', 'price', 'description']
 
 
 class SerializedOwner(serializers.ModelSerializer):
